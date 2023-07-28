@@ -1,0 +1,18 @@
+PostgreSQL'de kullanılan temel veri tipleri:
+INTEGER (veya INT): Tam sayıları temsil eder. PostgreSQL, küçük (2 byte), orta (4 byte) ve büyük (8 byte) olmak üzere farklı boyutlarda tamsayıları destekler.
+NUMERIC (veya DECIMAL): Kesirli sayıları temsil eder. Bu veri tipi, sabit noktalı sayılar için kullanılır ve hassas bir aritmetik yapısına sahiptir.
+REAL (veya FLOAT4): 4 byte (tek hassasiyetli) kayan noktalı sayıları temsil eder. Hassas hesaplamalar için kullanılabilir, ancak kesirli sayılar için NUMERIC daha uygun olabilir.
+DOUBLE PRECISION (veya FLOAT8): 8 byte (çift hassasiyetli) kayan noktalı sayıları temsil eder. Daha yüksek hassasiyet gerektiren hesaplamalar için kullanılır.
+CHARACTER (veya CHAR): Sabit uzunluktaki karakter dizilerini temsil eder. Belirtilen uzunluktan daha kısa karakterlerle doldurulur.
+CHARACTER VARYING (veya VARCHAR): Değişken uzunluktaki karakter dizilerini temsil eder. Belirtilen uzunluktan daha kısa karakterlerle doldurulur.
+TEXT: Değişken uzunluktaki metin dizilerini temsil eder. VARCHAR ile benzerdir, ancak genellikle kullanımı daha yaygındır.
+BOOLEAN: Doğru (true) veya yanlış (false) değerlerini temsil eder.
+DATE: Tarihleri temsil eder (yıl, ay, gün).
+TIME: Zamanları temsil eder (saat, dakika, saniye).
+TIMESTAMP: Tarih ve zamanı temsil eder (yıl, ay, gün, saat, dakika, saniye).
+INTERVAL: Bir zaman aralığını temsil eder. Örneğin, "3 gün" veya "2 saat" gibi.
+UUID: Evrensel benzersiz tanımlayıcıları temsil eder.
+JSON ve JSONB: JSON verilerini depolamak için kullanılır. JSONB, JSON verilerini ikili formatta depolayarak daha hızlı ve verimli işlemler sağlar.
+ARRAY: Bir dizi değerini temsil eder. Herhangi bir veri tipini içeren bir dizi oluşturulabilir (örneğin INTEGER[], TEXT[] vb.).
+Bu, PostgreSQL'de kullanılabilen temel veri tiplerinden sadece birkaçıdır. PostgreSQL ayrıca kullanıcı tanımlı türlerin (USER-DEFINED) oluşturulmasına izin verir, böylece 
+ihtiyaca uygun veri tipleri tanımlamak mümkündür.
